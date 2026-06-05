@@ -6057,20 +6057,26 @@ HWND GetCoreWnd() {
         [](HWND hWnd, LPARAM lParam) -> BOOL {
             ENUM_WINDOWS_PARAM& param = *(ENUM_WINDOWS_PARAM*)lParam;
 
-            DWORD dwProcessId = 0;
-            if (!GetWindowThreadProcessId(hWnd, &dwProcessId) ||
-                dwProcessId != GetCurrentProcessId()) {
-                return TRUE;
-            }
-
             WCHAR szClassName[32];
             if (GetClassName(hWnd, szClassName, ARRAYSIZE(szClassName)) == 0) {
                 return TRUE;
             }
 
-            if (_wcsicmp(szClassName, L"Windows.UI.Core.CoreWindow") == 0) {
-                *param.hWnd = hWnd;
-                return FALSE;
+            if (_wcsicmp(szClassName, L"ApplicationFrameWindow") != 0) {
+                return TRUE;
+            }
+
+            // Look for a direct child CoreWindow belonging to this process.
+            HWND hCoreWnd = nullptr;
+            while ((hCoreWnd = FindWindowEx(hWnd, hCoreWnd,
+                                            L"Windows.UI.Core.CoreWindow",
+                                            nullptr)) != nullptr) {
+                DWORD dwProcessId = 0;
+                if (GetWindowThreadProcessId(hCoreWnd, &dwProcessId) &&
+                    dwProcessId == GetCurrentProcessId()) {
+                    *param.hWnd = hCoreWnd;
+                    return FALSE;
+                }
             }
 
             return TRUE;
