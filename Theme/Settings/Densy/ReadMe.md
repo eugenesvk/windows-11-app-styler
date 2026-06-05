@@ -15,7 +15,6 @@ A condensed style:
 
 ## Known issues
   - descriptions in 1-line items are not vertically aligned ![v-misalignment](./img/Settings_issue_vertical_misalignment.png), not sure whether it's possible to fix using XAML styling alone and these 2 grid child lines (name/description) have to be aware of the size of it's cousins, so would likely need a change in the whole grandparent structure (a table)
-  - not all elements have their sizes adjusted to fit, e.g., some buttons might be too big ![button too big](./img/issue_button_too_big.png)
 
 ## Credits
   - [Windhawk](https://windhawk.net) mod engine
