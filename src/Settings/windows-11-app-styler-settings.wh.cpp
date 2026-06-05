@@ -5,6 +5,7 @@
 // @version         0.0.1
 // @author          eugenesvk
 // @github          https://github.com/eugenesvk
+// @homepage        https://github.com/eugenesvk/windows-11-app-styler
 // @include         SystemSettings.exe
 // @architecture    x86-64
 // @compilerOptions -lcomctl32 -lole32 -loleaut32 -lruntimeobject -lversion
