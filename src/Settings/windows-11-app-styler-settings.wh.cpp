@@ -9,8 +9,9 @@
 // @include         SystemSettings.exe
 // @architecture    x86-64
 // @compilerOptions -lcomctl32 -lole32 -loleaut32 -lruntimeobject -lversion
+// @license         GPL-3.0-or-later
 // ==/WindhawkMod==
-// Source code is published under The GNU General Public License v3.0
+// Source code is published under The GNU General Public License v3.0, styles are MIT
 // For bug reports and feature requests, please open an issue here: https://github.com/eugenesvk/windows-11-app-styler
 // For pull requests, development takes place here: https://github.com/eugenesvk/windows-11-app-styler
 
