@@ -1,35 +1,25 @@
 // ==WindhawkMod==
-// @id              windows-11-start-menu-styler
-// @name            Windows 11 Start Menu Styler
-// @description     Customize the Start menu with themes contributed by others or create your own
-// @version         1.5.2
-// @author          m417z
-// @github          https://github.com/m417z
-// @twitter         https://twitter.com/m417z
-// @homepage        https://m417z.com/
-// @include         StartMenuExperienceHost.exe
-// @include         SearchHost.exe
-// @include         SearchApp.exe
+// @id              windows-11-app-styler-settings
+// @name            Windows 11 App Styler: Settings
+// @description     Customize the Settings app with themes contributed by others or create your own
+// @version         0.0.1
+// @author          eugenesvk
+// @github          https://github.com/eugenesvk
+// @include         SystemSettings.exe
 // @architecture    x86-64
 // @compilerOptions -lcomctl32 -lole32 -loleaut32 -lruntimeobject -lversion
 // ==/WindhawkMod==
-
-// Source code is published under The GNU General Public License v3.0.
-//
-// For bug reports and feature requests, please open an issue here:
-// https://github.com/ramensoftware/windhawk-mods/issues
-//
-// For pull requests, development takes place here:
-// https://github.com/m417z/my-windhawk-mods
+// Source code is published under The GNU General Public License v3.0
+// For bug reports and feature requests, please open an issue here: https://github.com/eugenesvk/windows-11-app-styler
+// For pull requests, development takes place here: https://github.com/eugenesvk/windows-11-app-styler
 
 // ==WindhawkModReadme==
 /*
-# Windows 11 Start Menu Styler
+# Windows 11 App Styler: Settings
 
-Customize the Start menu with themes contributed by others or create your own.
+Customize the Settings Windows App (`SystemSettings.exe`) with themes contributed by others or create your own.
 
-Also check out the **Windows 11 Taskbar Styler**, **Windows 11 Notification
-Center Styler** mods.
+Also check out the **Windows 11 Start Menu Styler**, **Windows 11 Taskbar Styler**, **Windows 11 Notification Center Styler** mods.
 
 ## Themes
 
@@ -11641,7 +11631,7 @@ std::wstring CreateWebViewJsCodeForApply() {
     std::wstring jsCode =
         LR"(
         (() => {
-        const styleElementId = "windhawk-windows-11-start-menu-styler-style";
+        const styleElementId = "windhawk-windows-11-app-settings-styler-style";
         const styleContent = `
     )";
 
@@ -11819,7 +11809,7 @@ PCWSTR CreateWebViewJsCodeForClear() {
     PCWSTR jsCode =
         LR"(
         (() => {
-        const styleElementId = "windhawk-windows-11-start-menu-styler-style";
+        const styleElementId = "windhawk-windows-11-app-settings-styler-style";
         const style = document.getElementById(styleElementId);
         if (style) {
             style.parentNode.removeChild(style);
