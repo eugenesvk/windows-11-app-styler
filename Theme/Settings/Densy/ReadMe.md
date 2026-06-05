@@ -1,5 +1,5 @@
 <p align="center">
-Windows 11 Settings App visual style customizations
+Windows 11 Settings App condsensed visual style customizations
 <br>
 (via Windhawk customization engine)
 </p>
