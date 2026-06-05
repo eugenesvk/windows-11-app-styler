@@ -5262,7 +5262,7 @@ std::wstring AdjustTypeName(std::wstring_view type) {
 
     static const std::vector<std::pair<std::wstring_view, std::wstring_view>>
         adjustments = {
-            {L"StartMenu:", L"StartMenu."},
+            {L"SystemSettings:", L"SystemSettings."},
             {L"muxc:", L"Microsoft.UI.Xaml.Controls."},
         };
 
