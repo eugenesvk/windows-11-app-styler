@@ -31,4 +31,3 @@ See individual style descriptions
 
 ## Credits
   - [Windhawk](https://windhawk.net) mod engine
-  - [Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler), which this one is based upon
