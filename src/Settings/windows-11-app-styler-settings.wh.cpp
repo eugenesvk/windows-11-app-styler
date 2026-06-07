@@ -2,7 +2,7 @@
 // @id              windows-11-app-styler-settings
 // @name            Windows 11 App Styler: Settings
 // @description     Customize the Settings app with themes contributed by others or create your own
-// @version         0.0.1
+// @version         0.0.2
 // @author          eugenesvk
 // @github          https://github.com/eugenesvk
 // @homepage        https://github.com/eugenesvk/windows-11-app-styler
